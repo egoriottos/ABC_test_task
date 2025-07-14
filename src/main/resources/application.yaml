@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: ABC_BERKUT_TEST_TASK
+  datasource:
+    url: jdbc:h2:mem:telegrambotdb
+    username: user
+    password: user
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8080
+telegram:
+  bot-token: 8098408576:AAEH9o_0j9teGdwVG4uq_IvvumlCj-JW82A
+  bot-name: ABC_test_task_bot
+security:
+  secret: "9a4f2c8d3b7a1e6f45c8a0b3f267d8b1d4e6f3c8a9d2b5f8e3a9c8b5f6v8a3d9"
+  expiration: "86400000"
